@@ -1,0 +1,13 @@
+type Query {
+    # Find All
+    usuarios: [Usuario]
+
+    #Find By Id
+    usuario(id: Int): Usuario
+
+    # Find All
+    perfis: [Perfil]
+    
+    #Find By Id
+    perfil(id: Int): Perfil
+}

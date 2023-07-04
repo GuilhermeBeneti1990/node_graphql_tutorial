@@ -1,0 +1,30 @@
+# Entidade
+type Usuario {
+    id: Int
+    nome: String!
+    email: String!
+    idade: Int
+    perfil: Perfil
+    status: UsuarioStatus
+}
+
+# DTO
+input UsuarioInput {
+    nome: String
+    email: String
+    idade: Int
+}
+
+# Filtro
+input UsuarioFiltro {
+    id: Int
+    email: String
+}
+
+enum UsuarioStatus {
+    ATIVO
+    INATIVO
+    BLOQUEADO
+}
+
+
